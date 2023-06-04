@@ -66,8 +66,19 @@ const IndexPage = () => {
           ACTion
         </span>
         <br />
-        <span style={{background:"linear-gradient(45deg,#7c00ff,#ff00b8)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",fontSize:"28px"}}> by{"\n"}{"\u00A0"}<img src="/logo.png" alt="ACTion Logo" width={150} height={150} /></span>
-
+        <span
+          style={{
+            background: "linear-gradient(45deg,#7c00ff,#ff00b8)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            fontSize: "28px",
+          }}
+        >
+          {" "}
+          by{"\n"}
+          {"\u00A0"}
+          <img src="/logo.png" alt="ACTion Logo" width={150} height={150} />
+        </span>
       </h1>
 
       <motion.div
@@ -102,16 +113,19 @@ const IndexPage = () => {
           practice is a challenging endeavor.
           <br />
           <br />• Besides, AI is a diverse field, spanning multiple domains and
-          use cases, which further adds to the complexity. As a result, many
+          use cases, which further adds to the complexity. As the result, many
           development teams tend to overlook the aspect of{" "}
           <strong style={{ color: "#008fb3" }}>Responsibility</strong> in their
           AI projects.
           <br />
           <br />• But with the increasing popularity of{" "}
           <strong style={{ color: "#008fb3" }}>Responsible Tech</strong> and
-          upcoming legislations concerning the regulation of AI Systems like the{" "}
-          <strong style={{ color: "#008fb3" }}>EU-AI-ACT</strong>, Responsible
-          AI is no longer a choice but a compliance every AI-System Provider
+          upcoming legislations concerning the{" "}
+          <strong style={{ color: "#008fb3" }}>
+            regulation of AI Systems like the EU-AI-ACT
+          </strong>
+          , Responsible AI is no longer a choice but a compliance every{" "}
+          <strong style={{ color: "#008fb3" }}> AI-System Provider </strong>
           should follow.
         </p>
       </motion.div>
@@ -215,9 +229,9 @@ const IndexPage = () => {
                   establish a legal framework for the development, deployment,
                   and use of AI systems in the EU.
                   <br />
-                  <br />• EU are transparent, reliable, and safe, and that they
-                  respect The proposed regulation seeks to ensure that AI
-                  systems used in thefundamental rights and values.{" "}
+                  <br />• The proposed regulation seeks to ensure that AI
+                  systems used in the EU are transparent, reliable, and safe,
+                  and that they respect fundamental rights and values.{" "}
                   <a
                     href="https://artificialintelligenceact.eu/"
                     target="_blank"
@@ -249,8 +263,8 @@ const IndexPage = () => {
             onClick={() => handleToggle(2)}
           >
             <h2 style={{ fontSize: "24px", fontWeight: "bold", margin: 0 }}>
-              • What's been done so{" "}
-              <strong style={{ color: "#008fb3" }}> far</strong> ?
+              • What is the aim of the{" "}
+              <strong style={{ color: "#008fb3" }}>AI-ACTion Project</strong> ?
             </h2>
             <AnimatePresence>
               {expanded === 2 && (
@@ -261,18 +275,19 @@ const IndexPage = () => {
                   exit={{ opacity: 0, y: 50 }}
                   style={{ marginTop: "10px", fontSize: "18px" }}
                 >
-                  • We did a literature review of the current draft of the
-                  EU-AI-ACT and{" "}
-                  <strong style={{ color: "#008fb3" }}>capAI </strong>conformity
-                  assessment procedure for AI systems.
+                  • The AI Action Project aims to use{" "}
+                  <strong style={{ color: "#008fb3" }}>
+                    Generative AI and Natural Language
+                  </strong>{" "}
+                  to implement Responsible AI principles in AI systems through
+                  compliance with the EU-AI-ACT.
                   <br />
-                  <br />• Based on acquired knowledge and internal feedbacks we
-                  also have developed a Minimum Viable Product (MVP) of the tool
-                  called
-
-                  <strong style={{ color: "#008fb3" }}> Traceback.ai </strong>
-
-                  which could potentially be used to implement EU-AI-ACT.
+                  <br />• The tool aims to provide{" "}
+                  <strong style={{ color: "#008fb3" }}>
+                    project-specific recommendations
+                  </strong>{" "}
+                  in natural language, through which the AI System Providers can
+                  build compliant AI Systems.
                 </motion.p>
               )}
             </AnimatePresence>
@@ -296,11 +311,56 @@ const IndexPage = () => {
             onClick={() => handleToggle(3)}
           >
             <h2 style={{ fontSize: "24px", fontWeight: "bold", margin: 0 }}>
+              • What's been done so far with the{" "}
+              <strong style={{ color: "#008fb3" }}>AI-ACTion Project</strong> ?
+            </h2>
+            <AnimatePresence>
+              {expanded === 3 && (
+                <motion.p
+                  key="paragraph4"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 50 }}
+                  style={{ marginTop: "10px", fontSize: "18px" }}
+                >
+                  • We did a literature review of the current draft of the
+                  EU-AI-ACT and{" "}
+                  <strong style={{ color: "#008fb3" }}>capAI</strong> conformity
+                  assessment procedure for AI systems.
+                  <br />
+                  <br />• Based on acquired knowledge and internal feedback, we
+                  have also developed a Minimum Viable Product (MVP) of the tool
+                  called{" "}
+                  <strong style={{ color: "#008fb3" }}>Traceback.ai</strong>,
+                  which could potentially be used to implement EU-AI-ACT.
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        </AnimatePresence>
+
+        <AnimatePresence>
+          <motion.div
+            key={4}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            style={{
+              marginBottom: "20px",
+              background: "rgba(255, 255, 255, 0.1)",
+              padding: "20px",
+              borderRadius: "10px",
+              cursor: "pointer",
+              color: "white",
+            }}
+            onClick={() => handleToggle(4)}
+          >
+            <h2 style={{ fontSize: "24px", fontWeight: "bold", margin: 0 }}>
               • Sounds interesting? Could I join the
               <strong style={{ color: "#008fb3" }}> team</strong> ?
             </h2>
             <AnimatePresence>
-              {expanded === 3 && (
+              {expanded === 4 && (
                 <motion.p
                   key="paragraph4"
                   initial={{ opacity: 0, y: 50 }}
@@ -314,14 +374,15 @@ const IndexPage = () => {
                   <strong style={{ color: "#008fb3" }}>
                     Future of AI workflows
                   </strong>{" "}
-                  for the next couple of months, feel free to send a mail to{" "}
+                  feel free to send a mail to{" "}
                   <a
                     href="mailto:contact@ai-action.com"
                     style={{ color: "#008fb3", textDecoration: "underline" }}
                   >
                     contact@ai-action.com
                   </a>
-                  . We are looking for people from different backgrounds who
+                  <br/>
+                  We are looking for people from different backgrounds who
                   could provide meaningful feedback and suggestions for the
                   tool.
                   <br />
