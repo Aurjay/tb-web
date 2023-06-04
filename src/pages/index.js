@@ -34,7 +34,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        <span style={{ fontSize: "48px" }}>AI-</span>
+        <span style={{ fontSize: "48px", color: "#7c00ff" }}>AI-</span>
         <span
           style={{
             background: "linear-gradient(45deg, #7c00ff, #ff00b8)",
@@ -64,22 +64,23 @@ const IndexPage = () => {
         }}
       >
         <p style={{ marginTop: "10px", fontSize: "18px" }}>
-          Implementing{" "}
-          <span style={{ fontWeight: "bold" }}>Responsible AI-Systems</span> is
-          not as straightforward as it may initially seem. Despite the existence
-          of theoretical concepts and general principles, translating{" "}
-          <span style={{ fontWeight: "bold" }}>Responsible AI</span> into
-          practice is a challenging endeavor. Besides, AI is a diverse field,
-          spanning multiple domains and use cases, which further adds to the
-          complexity. As a result, many development teams tend to overlook the
-          aspect of
-          <span style={{ fontWeight: "bold" }}> Responsibility</span> in their
-          AI projects. But with the increasing popularity of{" "}
-          <span style={{ fontWeight: "bold" }}>Responsible Tech</span> and
-          upcoming legislations concerning the regulation of AI Systems like the{" "}
-          <span style={{ fontWeight: "bold" }}>EU-AI-ACT</span>, Responsible AI
-          is no longer a choice but a compliance every AI-System Provider should
-          follow.
+          - Implementing <strong style={{ color: "#7c00ff" }}>Responsible AI-Systems</strong> is not as
+          straightforward as it may initially seem. Despite the existence of
+          theoretical concepts and general principles, translating{" "}
+          <strong style={{ color: "#7c00ff" }}>Responsible AI</strong> into practice is a challenging
+          endeavor.
+          <br />
+          <br/>
+          - Besides, AI is a diverse field, spanning multiple domains and use
+          cases, which further adds to the complexity. As a result, many
+          development teams tend to overlook the aspect of{" "}
+          <strong style={{ color: "#7c00ff" }}>Responsibility</strong> in their AI projects.
+          <br/>
+          <br />- But with the increasing popularity of{" "}
+          <strong style={{ color: "#7c00ff" }}>Responsible Tech</strong> and upcoming legislations concerning
+          the regulation of AI Systems like the <strong style={{ color: "#7c00ff" }}>EU-AI-ACT</strong>,
+          Responsible AI is no longer a choice but a compliance every AI-System
+          Provider should follow.
         </p>
       </motion.div>
 
@@ -113,20 +114,37 @@ const IndexPage = () => {
             onClick={() => handleToggle(0)}
           >
             <h2 style={{ fontSize: "24px", fontWeight: "bold", margin: 0 }}>
-              What is <span style={{ fontWeight: "bold" }}>Responsible AI</span>
-              ?
+              - What is <strong style={{ color: "#7c00ff" }}>Responsible AI</strong>?
             </h2>
-            {expanded === 0 && (
-              <p style={{ marginTop: "10px", fontSize: "18px" }}>
-                <span style={{ fontWeight: "bold" }}>Responsible AI</span>, in
-                professional terms related to compliance, refers to the ethical
-                and legal principles, guidelines, and practices that govern the
-                development, deployment, and use of artificial intelligence (AI)
-                systems. It involves ensuring that AI technologies are designed
-                and implemented in a manner that respects legal requirements,
-                ethical considerations, and societal norms. More info.
-              </p>
-            )}
+            <AnimatePresence>
+              {expanded === 0 && (
+                <motion.p
+                  key="paragraph1"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 50 }}
+                  style={{ marginTop: "10px", fontSize: "18px" }}
+                >
+                  - <strong style={{ color: "#7c00ff" }}>Responsible AI</strong>, in professional terms related
+                  to compliance, refers to the ethical and legal principles,
+                  guidelines, and practices that govern the development,
+                  deployment, and use of artificial intelligence (AI) systems.
+                  <br/>
+                  <br/>
+                  - It involves ensuring that AI technologies are designed and
+                  implemented in a manner that respects legal requirements,
+                  ethical considerations, and societal norms.{" "}
+                  <a
+                    href="xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#7c00ff", textDecoration: "underline" }}
+                  >
+                    More info.
+                  </a>
+                </motion.p>
+              )}
+            </AnimatePresence>
           </motion.div>
         </AnimatePresence>
 
@@ -147,20 +165,39 @@ const IndexPage = () => {
             onClick={() => handleToggle(1)}
           >
             <h2 style={{ fontSize: "24px", fontWeight: "bold", margin: 0 }}>
-              What is the <span style={{ fontWeight: "bold" }}>EU-AI-ACT</span>?
+              - What is the <strong style={{ color: "#7c00ff" }}>EU-AI-ACT</strong>?
             </h2>
-            {expanded === 1 && (
-              <p style={{ marginTop: "10px", fontSize: "18px" }}>
-                The <span style={{ fontWeight: "bold" }}>AI Act</span> is a
-                proposed regulation by the European Union that aims to establish
-                a legal framework for the development, deployment, and use of AI
-                systems in the EU. The proposed regulation seeks to ensure that
-                AI systems used in the EU are transparent, reliable, and safe,
-                and that they respect fundamental rights and values. More info.
-              </p>
-            )}
+            <AnimatePresence>
+              {expanded === 1 && (
+                <motion.p
+                  key="paragraph2"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 50 }}
+                  style={{ marginTop: "10px", fontSize: "18px" }}
+                >
+                  - The <strong style={{ color: "#7c00ff" }}>AI Act</strong> is a proposed regulation by the
+                  European Union that aims to establish a legal framework for
+                  the development, deployment, and use of AI systems in the EU.
+                  <br/>
+                  <br/>
+                  - The proposed regulation seeks to ensure that AI systems used
+                  in the EU are transparent, reliable, and safe, and that they
+                  respect fundamental rights and values.{" "}
+                  <a
+                    href="xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#7c00ff", textDecoration: "underline" }}
+                  >
+                    More info.
+                  </a>
+                </motion.p>
+              )}
+            </AnimatePresence>
           </motion.div>
         </AnimatePresence>
+
         <AnimatePresence>
           <motion.div
             key={2}
@@ -178,19 +215,31 @@ const IndexPage = () => {
             onClick={() => handleToggle(2)}
           >
             <h2 style={{ fontSize: "24px", fontWeight: "bold", margin: 0 }}>
-              What's been done so far ?
+              - What's been done so far?
             </h2>
-            {expanded === 2 && (
-              <p style={{ marginTop: "10px", fontSize: "18px" }}>
-                We did a literature review of the current draft of the EU-AI-ACT
-                and capAI conformity assessment procedure for AI systems. Based
-                on acquired knowledge and internal feedbacks we also have
-                developed an Minimum Viable Product(MVP) of the tool which could
-                be potentially used to implement EU-AI-ACT.
-              </p>
-            )}
+            <AnimatePresence>
+              {expanded === 2 && (
+                <motion.p
+                  key="paragraph3"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 50 }}
+                  style={{ marginTop: "10px", fontSize: "18px" }}
+                >
+                  - We did a literature review of the current draft of the
+                  EU-AI-ACT and capAI conformity assessment procedure for AI
+                  systems. 
+                  <br/>
+                  <br/>
+                  - Based on acquired knowledge and internal feedbacks we
+                  also have developed a Minimum Viable Product (MVP) of the tool
+                  which could potentially be used to implement EU-AI-ACT.
+                </motion.p>
+              )}
+            </AnimatePresence>
           </motion.div>
         </AnimatePresence>
+
         <AnimatePresence>
           <motion.div
             key={3}
@@ -208,16 +257,24 @@ const IndexPage = () => {
             onClick={() => handleToggle(3)}
           >
             <h2 style={{ fontSize: "24px", fontWeight: "bold", margin: 0 }}>
-              Sounds interesting? Could I join the team?
+              - Sounds interesting? Could I join the team?
             </h2>
-            {expanded === 3 && (
-              <p style={{ marginTop: "10px", fontSize: "18px" }}>
-                Yes. We are currently looking for highly motivated people from
-                different backgrounds who could provoide meaningful feedbacks
-                and suggestions for the tool. You are also welcome to propose
-                new ideas, debate and organize workshops on the topic.
-              </p>
-            )}
+            <AnimatePresence>
+              {expanded === 3 && (
+                <motion.p
+                  key="paragraph4"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 50 }}
+                  style={{ marginTop: "10px", fontSize: "18px" }}
+                >
+                  Yes. We are currently looking for highly motivated people from
+                  different backgrounds who could provide meaningful feedback
+                  and suggestions for the tool. You are also welcome to propose
+                  new ideas, debate, and organize workshops on the topic.
+                </motion.p>
+              )}
+            </AnimatePresence>
           </motion.div>
         </AnimatePresence>
       </motion.div>
