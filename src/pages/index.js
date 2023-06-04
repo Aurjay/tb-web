@@ -77,7 +77,7 @@ const IndexPage = () => {
         transition={{ duration: 0.6 }}
         style={{
           marginBottom: "20px",
-          background: "rgba(255, 255, 255, 0.1)",
+          background: "rgba(255, 255, 255, 0.13)",
           padding: "20px",
           borderRadius: "10px",
           width: "800px",
