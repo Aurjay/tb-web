@@ -113,7 +113,7 @@ const IndexPage = () => {
           <strong style={{ color: "#008fb3" }}>Responsible AI</strong> into
           practice is a challenging endeavor.
           <br />
-          <br />• Besides, AI is a diverse field, spanning multiple domains and
+          <br />• Besides, Artificial Intelligence is a diverse field, spanning multiple domains and
           use cases, which further adds to the complexity. As the result, many
           development teams tend to overlook the aspect of{" "}
           <strong style={{ color: "#008fb3" }}>Responsibility</strong> in their
