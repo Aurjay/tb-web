@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const variants = {
   hidden: { opacity: 0, y: 50 },
@@ -122,7 +123,7 @@ const IndexPage = () => {
           <strong style={{ color: "#008fb3" }}>Responsible Tech</strong> and
           upcoming legislations concerning the{" "}
           <strong style={{ color: "#008fb3" }}>
-            regulation of AI Systems like the EU-AI-ACT
+            regulation of AI-Systems like the EU-AI-ACT
           </strong>
           , Responsible AI is no longer a choice but a compliance every{" "}
           <strong style={{ color: "#008fb3" }}> AI-System Provider </strong>
@@ -163,6 +164,27 @@ const IndexPage = () => {
               • What is{" "}
               <strong style={{ color: "#008fb3" }}>Responsible AI</strong> ?
             </h2>
+            <div
+              style={{
+                position: "relative",
+                height: "100%",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  right: "20px",
+                  transform: "translateY(-50%)",
+                }}
+              >
+                <MdKeyboardArrowDown
+                  size={25}
+                  color={expanded === 0 ? "#008fb3" : "white"}
+                />
+              </div>
+            </div>
+
             <AnimatePresence>
               {expanded === 0 && (
                 <motion.p
@@ -215,6 +237,26 @@ const IndexPage = () => {
               • What is the{" "}
               <strong style={{ color: "#008fb3" }}>EU-AI-ACT</strong> ?
             </h2>
+            <div
+              style={{
+                position: "relative",
+                height: "100%",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  right: "20px",
+                  transform: "translateY(-50%)",
+                }}
+              >
+                <MdKeyboardArrowDown
+                  size={25}
+                  color={expanded === 1 ? "#008fb3" : "white"}
+                />
+              </div>
+            </div>
             <AnimatePresence>
               {expanded === 1 && (
                 <motion.p
@@ -227,7 +269,7 @@ const IndexPage = () => {
                   • The <strong style={{ color: "#008fb3" }}>AI Act</strong> is
                   a proposed regulation by the European Union that aims to
                   establish a legal framework for the development, deployment,
-                  and use of AI systems in the EU.
+                  and use of AI-systems in the EU.
                   <br />
                   <br />• The proposed regulation seeks to ensure that AI
                   systems used in the EU are transparent, reliable, and safe,
@@ -266,6 +308,26 @@ const IndexPage = () => {
               • What is the aim of the{" "}
               <strong style={{ color: "#008fb3" }}>AI-ACTion Project</strong> ?
             </h2>
+            <div
+              style={{
+                position: "relative",
+                height: "100%",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  right: "20px",
+                  transform: "translateY(-50%)",
+                }}
+              >
+                <MdKeyboardArrowDown
+                  size={25}
+                  color={expanded === 2 ? "#008fb3" : "white"}
+                />
+              </div>
+            </div>
             <AnimatePresence>
               {expanded === 2 && (
                 <motion.p
@@ -277,17 +339,17 @@ const IndexPage = () => {
                 >
                   • The AI Action Project aims to use{" "}
                   <strong style={{ color: "#008fb3" }}>
-                    Generative AI and Natural Language
+                    Generative AI and Natural Language Processing
                   </strong>{" "}
-                  to implement Responsible AI principles in AI systems through
+                  to implement Responsible-AI principles in AI-Systems through
                   compliance with the EU-AI-ACT.
                   <br />
                   <br />• The tool aims to provide{" "}
                   <strong style={{ color: "#008fb3" }}>
                     project-specific recommendations
                   </strong>{" "}
-                  in natural language, through which the AI System Providers can
-                  build compliant AI Systems.
+                  in natural language, through which the AI-System Providers can
+                  build compliant AI-Systems.
                 </motion.p>
               )}
             </AnimatePresence>
@@ -314,6 +376,26 @@ const IndexPage = () => {
               • What's been done so far with the{" "}
               <strong style={{ color: "#008fb3" }}>AI-ACTion Project</strong> ?
             </h2>
+            <div
+              style={{
+                position: "relative",
+                height: "100%",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  right: "20px",
+                  transform: "translateY(-50%)",
+                }}
+              >
+                <MdKeyboardArrowDown
+                  size={25}
+                  color={expanded === 3 ? "#008fb3" : "white"}
+                />
+              </div>
+            </div>
             <AnimatePresence>
               {expanded === 3 && (
                 <motion.p
@@ -326,7 +408,7 @@ const IndexPage = () => {
                   • We did a literature review of the current draft of the
                   EU-AI-ACT and{" "}
                   <strong style={{ color: "#008fb3" }}>capAI</strong> conformity
-                  assessment procedure for AI systems.
+                  assessment procedure for AI-Systems.
                   <br />
                   <br />• Based on acquired knowledge and internal feedback, we
                   have also developed a Minimum Viable Product (MVP) of the tool
@@ -359,6 +441,26 @@ const IndexPage = () => {
               • Sounds interesting? Could I join the
               <strong style={{ color: "#008fb3" }}> team</strong> ?
             </h2>
+            <div
+              style={{
+                position: "relative",
+                height: "100%",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  right: "20px",
+                  transform: "translateY(-50%)",
+                }}
+              >
+                <MdKeyboardArrowDown
+                  size={25}
+                  color={expanded === 4 ? "#008fb3" : "white"}
+                />
+              </div>
+            </div>
             <AnimatePresence>
               {expanded === 4 && (
                 <motion.p
@@ -372,7 +474,7 @@ const IndexPage = () => {
                   <br />
                   If you are looking to contribute to a project concerning the{" "}
                   <strong style={{ color: "#008fb3" }}>
-                    Future of AI workflows
+                    Future of AI-Workflows
                   </strong>{" "}
                   feel free to send a mail to{" "}
                   <a
@@ -381,10 +483,10 @@ const IndexPage = () => {
                   >
                     contact@ai-action.com
                   </a>
-                  <br/>
-                  We are looking for people from different backgrounds who
-                  could provide meaningful feedback and suggestions for the
-                  tool.
+                  <br />
+                  We are looking for people from different backgrounds who could
+                  provide meaningful feedback and suggestions for the tool while
+                  learning more about the AI-ACT and its implemention.
                   <br />
                   <br />
                 </motion.p>
