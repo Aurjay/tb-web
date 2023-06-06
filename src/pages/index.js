@@ -33,6 +33,9 @@ const IndexPage = () => {
   const handleToggle = (index) => {
     setExpanded(index === expanded ? null : index);
   };
+  const handleButtonClick = () => {
+    window.open("https://tracebackai-latest.vercel.app/", "_blank");
+  };
 
   return (
     <div
@@ -113,9 +116,9 @@ const IndexPage = () => {
           <strong style={{ color: "#008fb3" }}>Responsible AI</strong> into
           practice is a challenging endeavor.
           <br />
-          <br />• Besides, Artificial Intelligence is a diverse field, spanning multiple domains and
-          use cases, which further adds to the complexity. As the result, many
-          development teams tend to overlook the aspect of{" "}
+          <br />• Besides, Artificial Intelligence is a diverse field, spanning
+          multiple domains and use cases, which further adds to the complexity.
+          As the result, many development teams tend to overlook the aspect of{" "}
           <strong style={{ color: "#008fb3" }}>Responsibility</strong> in their
           AI projects.
           <br />
@@ -129,6 +132,33 @@ const IndexPage = () => {
           <strong style={{ color: "#008fb3" }}> AI-System Provider </strong>
           should follow.
         </p>
+        <button
+          style={{
+            position: "absolute",
+            top: "60px",
+            right: "90px",
+            padding: "15px",
+            background: "#7c00ff",
+            border: "none",
+            borderRadius: "10px",
+            color: "white",
+            fontSize: "26px",
+            cursor: "pointer",
+            "@media (max-width: 768px)": {
+              fontSize: "14px",
+              padding: "8px",
+            },
+            "@media (max-width: 480px)": {
+              fontSize: "12px",
+              padding: "6px",
+            },
+          
+          }}
+          title="Opens Traceback.ai Tool"
+          onClick={handleButtonClick}
+        >
+          Traceback.ai
+        </button>
       </motion.div>
 
       <motion.div
