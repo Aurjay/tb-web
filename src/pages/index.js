@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowDown, MdIcon } from "react-icons/md";
+import { FiExternalLink } from "react-icons/fi";
 
 const variants = {
   hidden: { opacity: 0, y: 50 },
@@ -10,6 +11,7 @@ const variants = {
 const IndexPage = () => {
   const [expanded, setExpanded] = useState(null);
   const [resizedImageUrl, setResizedImageUrl] = useState(null);
+  const [isPhoneScreen, setIsPhoneScreen] = useState(false);
 
   useEffect(() => {
     const resizeImage = async () => {
@@ -28,11 +30,23 @@ const IndexPage = () => {
     };
 
     resizeImage();
+
+    const handleResize = () => {
+      setIsPhoneScreen(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const handleToggle = (index) => {
     setExpanded(index === expanded ? null : index);
   };
+
   const handleButtonClick = () => {
     window.open("https://tracebackai-latest.vercel.app/", "_blank");
   };
@@ -84,6 +98,51 @@ const IndexPage = () => {
           <img src="/logo.png" alt="ACTion Logo" width={150} height={150} />
         </span>
       </h1>
+      {isPhoneScreen ? (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <button
+            style={{
+              marginBottom: "20px",
+              padding: "15px",
+              background: "#7c00ff",
+              border: "none",
+              borderRadius: "10px",
+              color: "white",
+              fontSize: "26px",
+              cursor: "pointer",
+            }}
+            title="Opens Traceback.ai Tool"
+            onClick={handleButtonClick}
+          >
+            Traceback.ai
+          </button>
+        </div>
+      ) : (
+        <button
+          style={{
+            position: "absolute",
+            top: "60px",
+            right: "90px",
+            padding: "15px",
+            background: "#7c00ff",
+            border: "none",
+            borderRadius: "10px",
+            color: "white",
+            fontSize: "26px",
+            cursor: "pointer",
+          }}
+          title="Opens Traceback.ai Tool"
+          onClick={handleButtonClick}
+        >
+          Traceback.ai
+        </button>
+      )}
 
       <motion.div
         initial="hidden"
@@ -132,33 +191,7 @@ const IndexPage = () => {
           <strong style={{ color: "#008fb3" }}> AI-System Provider </strong>
           should follow.
         </p>
-        <button
-          style={{
-            position: "absolute",
-            top: "60px",
-            right: "90px",
-            padding: "15px",
-            background: "#7c00ff",
-            border: "none",
-            borderRadius: "10px",
-            color: "white",
-            fontSize: "26px",
-            cursor: "pointer",
-            "@media (max-width: 768px)": {
-              fontSize: "14px",
-              padding: "8px",
-            },
-            "@media (max-width: 480px)": {
-              fontSize: "12px",
-              padding: "6px",
-            },
-          
-          }}
-          title="Opens Traceback.ai Tool"
-          onClick={handleButtonClick}
-        >
-          Traceback.ai
-        </button>
+
       </motion.div>
 
       <motion.div
