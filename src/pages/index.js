@@ -72,7 +72,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        <span style={{ fontSize: "48px", color: "#7c00ff" }}>Project AI-</span>
+        <span style={{ fontSize: "48px", color: "#7c00ff" }}> AI-</span>
         <span
           style={{
             background: "linear-gradient(45deg, #7c00ff, #ff00b8)",
