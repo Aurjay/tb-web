@@ -31,7 +31,7 @@ const CardComponent = ({ teamMembers, isPhoneScreen }) => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              width: isPhoneScreen ? "100%" : "60%",
+              width: isPhoneScreen ? "100%" : "48%",
               marginBottom: "10px",
               background: "#ffffff",
               borderRadius: "8px",
