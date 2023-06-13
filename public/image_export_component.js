@@ -31,7 +31,7 @@ const CardComponent = ({ teamMembers, isPhoneScreen }) => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              width: isPhoneScreen ? "100%" : "48%",
+              width: isPhoneScreen ? "90%" : "48%", // Adjust the width for phone screen
               marginBottom: "10px",
               background: "#ffffff",
               borderRadius: "8px",
@@ -98,7 +98,7 @@ const App = () => {
     },
   ];
 
-  return <CardComponent teamMembers={teamMembers} isPhoneScreen={false} />;
+  return <CardComponent teamMembers={teamMembers} isPhoneScreen={true} />;
 };
 
 export default App;
