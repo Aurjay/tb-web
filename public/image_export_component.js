@@ -19,7 +19,7 @@ const CardComponent = ({ teamMembers, isPhoneScreen }) => {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          alignItems: isPhoneScreen ? "center" : "flex-start",
+          alignItems: "flex-start",
           justifyContent: "space-between",
           marginBottom: "40px",
         }}
@@ -31,7 +31,7 @@ const CardComponent = ({ teamMembers, isPhoneScreen }) => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              width: isPhoneScreen ? "90%" : "48%", // Adjust the width for phone screen
+              width: isPhoneScreen ? "100%" : "60%",
               marginBottom: "10px",
               background: "#ffffff",
               borderRadius: "8px",
@@ -98,7 +98,7 @@ const App = () => {
     },
   ];
 
-  return <CardComponent teamMembers={teamMembers} isPhoneScreen={true} />;
+  return <CardComponent teamMembers={teamMembers} isPhoneScreen={false} />;
 };
 
 export default App;
