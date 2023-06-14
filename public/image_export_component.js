@@ -33,9 +33,9 @@ const CardComponent = ({ teamMembers, isPhoneScreen }) => {
               alignItems: "center",
               width: isPhoneScreen ? "100%" : "48%",
               marginBottom: "10px",
-              background: "#ffffff",
+              background: "#271f43", // Change the background color to dark grey
               borderRadius: "8px",
-              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
               padding: "20px",
               boxSizing: "border-box",
               height: "200px", // Set the height of the card
@@ -56,7 +56,7 @@ const CardComponent = ({ teamMembers, isPhoneScreen }) => {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: "#0077B5",
+                color: "#9932CC",
                 display: "flex",
                 alignItems: "center",
                 marginTop: "5px",

@@ -576,7 +576,7 @@ const IndexPage = () => {
           marginBottom: "20px",
           fontSize: "32px",
           fontWeight: "bold",
-          color: "#ffffff",
+          color: "#808080",
           textAlign: "center",
         }}
       >
