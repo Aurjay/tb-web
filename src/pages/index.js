@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FiExternalLink } from "react-icons/fi";
-import App from "../../public/image_export_component"
+import App from "../../public/image_export_component";
 
 const variants = {
   hidden: { opacity: 0, y: 50 },
@@ -51,8 +51,6 @@ const IndexPage = () => {
   const handleButtonClick = () => {
     window.open("https://tracebackai-latest.vercel.app/", "_blank");
   };
-  
-
 
   return (
     <div
@@ -98,7 +96,13 @@ const IndexPage = () => {
           {" "}
           by{"\n"}
           {"\u00A0"}
-          <img src="/logo.png" alt="ACTion Logo" width={150} height={150} />
+          <a
+            href="https://www.responsibletechhub.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/logo.png" alt="ACTion Logo" width={150} height={150} />
+          </a>{" "}
         </span>
       </h1>
       {isPhoneScreen ? (
@@ -560,47 +564,47 @@ const IndexPage = () => {
           </motion.div>
         </AnimatePresence>
         <div
-      style={{
-        background: "radial-gradient(circle, #271f43, #000000)",
-        minHeight: "50vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "50px",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      <h1
-        style={{
-          marginBottom: "20px",
-          fontSize: "32px",
-          fontWeight: "bold",
-          color: "#808080",
-          textAlign: "center",
-        }}
-      >
-        Team
-      </h1>
-      <motion.div
-      style={{ maxWidth: "800px", width: "100%", position: "relative" }}
-      initial="hidden"
-      animate="visible"
-      variants={variants}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "flex-start",
-          justifyContent: "space-between",
-          marginBottom: "20px",
-        }}
-      >
-        <App/>
-      </div>
-    </motion.div>
-    </div>
+          style={{
+            background: "radial-gradient(circle, #271f43, #000000)",
+            minHeight: "50vh",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "50px",
+            fontFamily: "Arial, sans-serif",
+          }}
+        >
+          <h1
+            style={{
+              marginBottom: "20px",
+              fontSize: "32px",
+              fontWeight: "bold",
+              color: "#808080",
+              textAlign: "center",
+            }}
+          >
+            Team
+          </h1>
+          <motion.div
+            style={{ maxWidth: "800px", width: "100%", position: "relative" }}
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "flex-start",
+                justifyContent: "space-between",
+                marginBottom: "20px",
+              }}
+            >
+              <App />
+            </div>
+          </motion.div>
+        </div>
       </motion.div>
     </div>
   );
