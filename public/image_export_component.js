@@ -48,7 +48,7 @@ const CardComponent = ({ teamMembers, isPhoneScreen }) => {
               height={80}
               style={{ borderRadius: "50%", marginBottom: "10px" }}
             />
-            <p style={{ fontSize: "18px", margin: 0, textAlign: "center" }}>
+            <p style={{ fontSize: "18px", margin: 0, textAlign: "center", color: "#ffffff" }}>
               {teamMember.name}
             </p>
             <a

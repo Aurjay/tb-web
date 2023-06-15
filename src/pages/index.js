@@ -182,7 +182,7 @@ const IndexPage = () => {
           <strong style={{ color: "#008fb3" }}>Responsible AI</strong> into
           practice is a challenging endeavor.
           <br />
-          <br />• Besides, Artificial Intelligence is a diverse field, spanning
+          <br />• Artificial Intelligence is a diverse field, spanning
           multiple domains and use cases, which further adds to the complexity.
           As the result, many development teams tend to overlook the aspect of{" "}
           <strong style={{ color: "#008fb3" }}>Responsibility</strong> in their
@@ -413,7 +413,7 @@ const IndexPage = () => {
                   to implement Responsible-AI principles in AI-Systems through
                   compliance with the EU-AI-ACT.
                   <br />
-                  <br />• The tool aims to provide{" "}
+                  <br />• The Traceback.ai tool aims to provide{" "}
                   <strong style={{ color: "#008fb3" }}>
                     project-specific recommendations
                   </strong>{" "}
@@ -580,7 +580,7 @@ const IndexPage = () => {
               marginBottom: "20px",
               fontSize: "32px",
               fontWeight: "bold",
-              color: "#808080",
+              color: "#ffffff",
               textAlign: "center",
             }}
           >
